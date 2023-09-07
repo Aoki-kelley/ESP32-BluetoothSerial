@@ -55,9 +55,13 @@ ESP32-BluetoothSerial
 
 需要一个ESP32模块做为主机端(master)，一个ESP32模块作为从机端(slave)，需要注意，开始数据传输之前要让主机端得到正确的从机端的MAC地址。ESP32模块默认使用随机地址，意味着每次重新运行模块或代码时都要重新确定地址
 
-使用上类似Arduino的串口库
+使用上类似Arduino的串口库，见 examples
 
-详见 examples
+
+
+目前存在一些问题：
+
+- 从机发送，主机接收时，如果蓝牙连接断开将引发 OSError: [Errno 12] 错误
 
 
 
